@@ -8,7 +8,7 @@ import config
 
 
 def calculate_accuracy(y_true, y_score):
-    N = y_true.shape[0]
+    N = y_true.shape[0] #样本数
     accuracy = np.sum(np.argmax(y_true, axis=-1) == np.argmax(y_score, axis=-1)) / N
     return accuracy
 
